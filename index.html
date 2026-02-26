@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Instagram Follow Checker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h1>Instagram Follow Checker</h1>
+  <p class="subtitle">Upload your Instagram ZIP file</p>
+
+  <div class="upload-box" id="dropArea">
+    <p>Drag & Drop ZIP Here</p>
+    <input type="file" id="zipInput" accept=".zip">
+  </div>
+
+  <button onclick="processZip()">Analyze</button>
+
+  <div id="loading" class="hidden">Processing...</div>
+
+  <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
