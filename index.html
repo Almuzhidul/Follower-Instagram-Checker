@@ -9,11 +9,39 @@
 <body>
 
 <div class="container">
+
   <h1>Instagram Follow Checker</h1>
   <p class="subtitle">Upload your Instagram ZIP file</p>
 
+  <!-- Tutorial Section -->
+  <div class="tutorial">
+    <h2>How to Get Your Instagram Followers Data</h2>
+
+    <ol>
+      <li>Open Instagram settings</li>
+      <li>Go to <b>Accounts Center</b></li>
+      <li>Select <b>Your Information and Permissions</b></li>
+      <li>Click <b>Download Your Information</b></li>
+      <li>Request your data and choose <b>JSON format</b></li>
+      <li>Download the ZIP file when Instagram sends it</li>
+      <li>Upload the ZIP file below</li>
+    </ol>
+
+    <div class="video">
+      <iframe 
+        width="100%" 
+        height="315" 
+        src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID"
+        title="Instagram Data Download Tutorial"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <!-- Upload Box -->
   <div class="upload-box" id="dropArea">
-    <p>Drag & Drop ZIP Here</p>
+    <p>Drag & Drop ZIP Here or Click to Upload</p>
     <input type="file" id="zipInput" accept=".zip">
   </div>
 
@@ -22,6 +50,7 @@
   <div id="loading" class="hidden">Processing...</div>
 
   <div id="result"></div>
+
 </div>
 
 <script src="script.js"></script>
