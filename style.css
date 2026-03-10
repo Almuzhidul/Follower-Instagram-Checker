@@ -1,26 +1,237 @@
-.subtitle {
-  margin-bottom: 20px;
-  opacity: 0.9;
+body {
+
+margin: 0;
+
+font-family: 'Segoe UI', sans-serif;
+
+background: linear-gradient(
+135deg,
+#feda75,
+#fa7e1e,
+#d62976,
+#962fbf,
+#4f5bd5
+);
+
+background-size: 300% 300%;
+
+animation: gradient 10s ease infinite;
+
+color: white;
+
+text-align: center;
+
 }
+
+@keyframes gradient {
+
+0% {background-position:0% 50%;}
+50% {background-position:100% 50%;}
+100% {background-position:0% 50%;}
+
+}
+
+
+.container {
+
+background: rgba(0,0,0,0.6);
+
+margin: 40px auto;
+
+padding: 30px;
+
+border-radius: 20px;
+
+width: 90%;
+
+max-width: 850px;
+
+box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+
+}
+
+
+.subtitle {
+
+opacity: 0.9;
+
+margin-bottom: 20px;
+
+}
+
+
+/* Tutorial Section */
 
 .tutorial {
-  background: rgba(255,255,255,0.1);
-  padding: 20px;
-  border-radius: 15px;
-  margin-bottom: 25px;
-  text-align: left;
+
+background: rgba(255,255,255,0.1);
+
+padding: 20px;
+
+border-radius: 15px;
+
+margin-bottom: 25px;
+
+text-align: left;
+
 }
+
 
 .tutorial h2 {
-  text-align: center;
+
+text-align: center;
+
+margin-bottom: 15px;
+
 }
+
 
 .tutorial ol {
-  padding-left: 20px;
+
+padding-left: 20px;
+
 }
 
+
+.note {
+
+margin-top: 15px;
+
+font-weight: bold;
+
+}
+
+
 .video {
-  margin-top: 15px;
-  border-radius: 10px;
-  overflow: hidden;
+
+margin-top: 15px;
+
+border-radius: 10px;
+
+overflow: hidden;
+
+}
+
+
+/* Upload */
+
+.upload-box {
+
+border: 2px dashed white;
+
+padding: 30px;
+
+border-radius: 15px;
+
+margin-bottom: 20px;
+
+cursor: pointer;
+
+transition: 0.2s;
+
+}
+
+
+.upload-box:hover {
+
+background: rgba(255,255,255,0.1);
+
+}
+
+
+.upload-box input {
+
+display: none;
+
+}
+
+
+.small {
+
+font-size: 14px;
+
+opacity: 0.8;
+
+}
+
+
+button {
+
+background: #ffffff;
+
+color: #d62976;
+
+border: none;
+
+padding: 12px 25px;
+
+border-radius: 25px;
+
+font-weight: bold;
+
+cursor: pointer;
+
+transition: 0.3s;
+
+}
+
+
+button:hover {
+
+background: #feda75;
+
+}
+
+
+.stats {
+
+display: flex;
+
+justify-content: space-around;
+
+margin-top: 20px;
+
+flex-wrap: wrap;
+
+gap: 10px;
+
+}
+
+
+.card {
+
+background: rgba(255,255,255,0.15);
+
+padding: 15px;
+
+border-radius: 15px;
+
+width: 30%;
+
+min-width: 120px;
+
+}
+
+
+.hidden {
+
+display: none;
+
+}
+
+
+pre {
+
+text-align: left;
+
+background: rgba(0,0,0,0.5);
+
+padding: 15px;
+
+border-radius: 10px;
+
+max-height: 200px;
+
+overflow-y: auto;
+
 }
