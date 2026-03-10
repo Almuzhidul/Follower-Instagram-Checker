@@ -1,58 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Instagram Follow Checker</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<meta charset="UTF-8">
+<title>Instagram Follow Checker</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+
 </head>
 <body>
 
 <div class="container">
 
-  <h1>Instagram Follow Checker</h1>
-  <p class="subtitle">Upload your Instagram ZIP file</p>
+<h1>Instagram Follow Checker</h1>
+<p class="subtitle">Upload your Instagram ZIP file to analyze followers</p>
 
-  <!-- Tutorial Section -->
-  <div class="tutorial">
-    <h2>How to Get Your Instagram Followers Data</h2>
 
-    <ol>
-      <li>Open Instagram settings</li>
-      <li>Go to <b>Accounts Center</b></li>
-      <li>Select <b>Your Information and Permissions</b></li>
-      <li>Click <b>Download Your Information</b></li>
-      <li>Request your data and choose <b>JSON format</b></li>
-      <li>Download the ZIP file when Instagram sends it</li>
-      <li>Upload the ZIP file below</li>
-    </ol>
+<!-- Tutorial Section -->
 
-    <div class="video">
-      <iframe 
-        width="100%" 
-        height="315" 
-        src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID"
-        title="Instagram Data Download Tutorial"
-        frameborder="0"
-        allowfullscreen>
-      </iframe>
-    </div>
-  </div>
+<div class="tutorial">
 
-  <!-- Upload Box -->
-  <div class="upload-box" id="dropArea">
-    <p>Drag & Drop ZIP Here or Click to Upload</p>
-    <input type="file" id="zipInput" accept=".zip">
-  </div>
+<h2>How to Get Your Instagram Data</h2>
 
-  <button onclick="processZip()">Analyze</button>
+<ol>
+<li>Open <b>Instagram Settings</b></li>
+<li>Go to <b>Accounts Center</b></li>
+<li>Select <b>Your Information and Permissions</b></li>
+<li>Click <b>Download Your Information</b></li>
+<li>Choose <b>JSON format</b></li>
+<li>Wait until Instagram sends the download link</li>
+<li>Download the ZIP file</li>
+<li>Upload the ZIP file below</li>
+</ol>
 
-  <div id="loading" class="hidden">Processing...</div>
+<p class="note">
+Important: Your ZIP must contain:
+</p>
 
-  <div id="result"></div>
+<ul>
+<li>followers_1.json</li>
+<li>following.json</li>
+</ul>
+
+<div class="video">
+
+<iframe
+width="100%"
+height="315"
+src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID"
+title="Instagram Data Download Tutorial"
+frameborder="0"
+allowfullscreen>
+</iframe>
 
 </div>
 
+</div>
+
+
+<!-- Upload Area -->
+
+<div class="upload-box" id="dropArea">
+
+<p>Drag & Drop Instagram ZIP here</p>
+<p class="small">or click to select file</p>
+
+<input type="file" id="zipInput" accept=".zip">
+
+</div>
+
+
+<button onclick="processZip()">Analyze</button>
+
+
+<div id="loading" class="hidden">
+Processing ZIP file...
+</div>
+
+
+<div id="result"></div>
+
+
+</div>
+
+
 <script src="script.js"></script>
+
 </body>
 </html>
